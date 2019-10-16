@@ -1,0 +1,60 @@
+开发规范
+1、样式class命名：
+    （1）class命名中不允许出现大写字母以及英文‘_’；
+    （2）class命名如需使用两个单词及两个以上单词的，用‘ - ’连接，如 left-menu；
+
+2、文件及页面命名：
+    (1) 使用两个单词及两个以上单词的，用‘ - ’连接
+
+3、js命名：
+    （1）变量名：如需使用两个单词及两个以上单词的，统一使用下划线；
+    （2）方法名：如需使用两个单词及两个以上单词的，统一使用驼峰
+4、js函数注释：
+    /**
+    *
+    *
+    * @export 创建单线折线图
+    * @param {sting} title 标题
+    * @param {array} xAxis x轴的间隔文字
+    * @param {array} series 显示在图标的数据
+    * @param {array} [yAxis=[]] y轴间隔的文字
+    * @returns {object} echart需要的option对象
+    */
+    // FIEXME: 需要修正的问题
+    // TODO: 待编写的问题
+5.vue 组件书写顺序:
+    (1) 指令
+    (2) 带:的属性
+    (3) 不带:的属性
+    (4) 方法
+    组件只有一个属性不需要属性独占一行 标签内内容需要独占一行
+    标签组件没有内容写成单标签
+6.script书写顺序:
+    (1): compements
+    (2): props & props 需要定义类型和默认值
+    (3): data
+    (4): computed
+    (5): watch
+    (6): 生命周期方法
+    (7): methods
+7.css:
+    (1): 不能写空样式块
+    (2): css样式不应该超过3层
+8.vue文件书写顺序
+    (1)<template><template>
+    (2)<script><script>
+    (3)<style><style>
+9.vuex:
+    (1)所有数据在vuex actions请求
+10.遵循js standard版本 eslint规范
+    js standard规范官网
+    https://standardjs.com/readme-zhcn.html
+    javascritp standard style 中文文档
+    https://github.com/standard/standard/blob/master/docs/RULES-zhcn.md#javascript-standard-style
+    // "analyze":"cross-env NODE_ENV=production npm_config_report=true npm run build"
+11.vue-property-decorator文档
+    github: https://github.com/kaorun343/vue-property-decorator
+    npm:https://www.npmjs.com/package/vue-property-decorator
+12. vuex-module-decorators文档
+    github:https://github.com/championswimmer/vuex-module-decorators
+    npm: https://www.npmjs.com/package/vuex-module-decorators

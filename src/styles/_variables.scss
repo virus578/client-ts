@@ -1,0 +1,46 @@
+/* Variables */
+
+// Base color
+$themeColor: #0389FF;
+$successColor: #1BC91A;
+$warnColor: #FE931F;
+$errorColor: #EB433A;
+
+$titleColor: #333333;
+$textColor: #5B6F80;
+$normaIconColor: #9DA9B3;
+$tipTextColor: #BDC5CC;
+$splitColor:#DEE2E6;
+$gray:#F2F4F5;
+
+
+//Base font-size
+$specialFontSize: 0.24rem;
+$tilteFontSize: 0.16rem;
+$importFontSize: 0.14rem;
+$textFontSize: 0.12rem;
+
+
+// Sidebar
+$sideBarWidth: 2.1rem;
+$subMenuBg:#1f2d3d;
+$subMenuHover:rgba(229,242,254);
+$subMenuActiveText:#f4f4f5;
+$menuBg:#304156;
+$menuText:#bfcbd9;
+$menuActiveText:#0389FF;
+//$menuActiveText:#409EFF; // Also see settings.sidebarTextTheme
+
+// The :export directive is the magic sauce for webpack
+// https://mattferderer.com/use-sass-variables-in-typescript-and-javascript
+:export {
+  menuBg: $menuBg;
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+}
+
+
+.el-menu-item:hover, .el-menu-item:focus {
+  outline: none;
+  background-color: $subMenuHover !important;
+}
